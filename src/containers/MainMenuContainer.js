@@ -7,7 +7,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as MenuActions from 'actions/menu'
 
-const dataUrls = ['./data/gameList.json', './data/IPList.json', './data/versions.json']
+const dataUrls = ['./data/gameList.json', './data/ipList.json', './data/versions.json']
 
 class MainMenuContainer extends React.Component {
   constructor(props) {
@@ -16,7 +16,16 @@ class MainMenuContainer extends React.Component {
   }
 
   getData() {
-    Promise.all(dataUrls.map(url => fetch(url).then(resp => resp.json()))).then(jsons => {
+    const myHeaders = new Headers()
+
+    const myInit = {
+      method: 'GET',
+      headers: myHeaders,
+      mode: 'no-cors',
+      cache: 'default',
+    }
+    myHeaders.append('Content-Type', 'application/json')
+    Promise.all(dataUrls.map(url => fetch(url, myInit).then(resp => resp.json()))).then(jsons => {
       this.props.getGameList({ json: jsons[0] })
       this.props.getIPList({ json: jsons[1] })
       this.props.getVersionsList({ json: jsons[2] })
