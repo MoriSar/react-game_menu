@@ -1,0 +1,40 @@
+.Menu {
+	padding: 1%;
+	border: 1px solid #adadad;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+}
+.version,.chooseENV {
+	text-align: center;
+}
+.allGames, .currentGames {
+	text-align: center;
+}
+.countOfGames {
+	font-family: 'Coustard', serif;
+	margin-top: .6em;
+	margin-bottom: .6em;
+}
+.countOfGames p {
+	margin: 0;
+}
+.input-group {
+	font-family: 'Sanchez', serif;
+}
+.project-buttons[data-current_project="type_2"] > button[data-value="type_2"] {
+	background-color: #17a2b8;
+	border-color: #17a2b8;
+}
+.project-buttons[data-current_project="type_2"] > button[data-value="type_2"]:hover {
+	background-color: #13889a;
+	border-color: #13889a;
+}
+.project-buttons[data-current_project="type_1"] > button[data-value="type_1"] {
+	background-color: #17a2b8;
+	border-color: #17a2b8;
+}
+.project-buttons[data-current_project="type_1"] > button[data-value="type_1"]:hover {
+	background-color: #13889a;
+	border-color: #13889a;
+}

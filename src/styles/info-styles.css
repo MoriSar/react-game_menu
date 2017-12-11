@@ -1,0 +1,28 @@
+.Info {
+	z-index: 100;
+	display: none;
+	opacity: 0;
+	position: absolute;
+	background-color: #d1d1d1;
+	border: 1px solid #b8b8b8;
+	top: 5.4%;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+	box-shadow: 0 0 2em rgba(0, 0, 0, 0.15);
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-ms-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	transition: opacity .5s;
+}
+.Info td {
+	text-align: left;
+}
+.modal-content {
+	background-color: #c7cbc1;
+}
+.App[data-showing_info="true"] .Info {
+	opacity: 1;
+	display: block;
+}

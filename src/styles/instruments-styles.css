@@ -1,0 +1,10 @@
+.Instruments {
+	padding: 1%;
+	border: 1px solid #adadad;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+}
+.Instruments .buttons {
+	font-family: 'Orbitron', sans-serif;
+}
