@@ -54,5 +54,6 @@
   "engines": {
     "npm": ">=4",
     "node": ">=6"
-  }
+  },
+  "homepage": "."
 }
